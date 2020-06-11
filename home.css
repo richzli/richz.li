@@ -1,0 +1,30 @@
+a {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 2s linear;
+}
+
+.scroll-text {
+    display: none;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+
+    color: purple;
+}
+
+.home-main {
+    width: 500px;
+    text-align: right;
+
+    position: fixed;
+	top: 50%;
+	left: 50%;
+      
+    transform: translate(-325px, -80px);
+}
