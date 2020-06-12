@@ -1,21 +1,14 @@
-<html>
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>richz.li - 404</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@800&display=swap"> 
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+{% block scripts %}
     <script src="static/js/ml_fade.js"></script>
-</head>
+{% endblock %}
 
-<body>
+
+{% block content %}
     <div class="ml">
         <h1>404</h1>
         <h2><a class="ml-away" href="{{ url_for('home') }}">back to home</a></h2>
     </div>
-</body>
-
-</html>
+{% endblock %}
