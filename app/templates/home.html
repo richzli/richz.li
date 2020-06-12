@@ -5,21 +5,23 @@
     <title>richz.li</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@800&display=swap">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/home.css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="static/js/ml_fade.js"></script>
 </head>
 
 <body>
-    <div class="home-main">
+    <div class="ml home-main">
         <h1>richard li</h1>
-        <div class="scroll-text"><a href="about.html">about me</a></div>
-        <div class="scroll-text"><a href="projects.html">projects</a></div>
-        <div class="scroll-text"><a href="blog.html">blog</a></div>
-        <div class="scroll-text"><a href="contact.html">contact</a></div>
+        <div class="scroll-text"><a class="ml-away" href="{{ url_for('about') }}">about me</a></div>
+        <div class="scroll-text"><a class="ml-away" href="{{ url_for('projects') }}">projects</a></div>
+        <div class="scroll-text"><a class="ml-away" href="{{ url_for('blog') }}">blog</a></div>
+        <div class="scroll-text"><a class="ml-away" href="{{ url_for('contact') }}">contact</a></div>
     </div>
 
+    
     <script type="text/javascript">
 
         var index = 0;
