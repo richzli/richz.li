@@ -9,7 +9,7 @@
     <title>richz.li</title>
     {% endif %}
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@800&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@800&family=Roboto:wght@300&display=swap"> 
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
     {% block styles %}{% endblock %}
 
@@ -19,16 +19,20 @@
 
 <body>
     {% if nav %}
-        <nav>
-            <a href="{{ url_for('home') }}">richz.li</a>
-            <a href="{{ url_for('about') }}">about</a>
-            <a href="{{ url_for('projects') }}">projects</a>
-            <a href="{{ url_for('blog') }}">blog</a>
-            <a href="{{ url_for('contact') }}">contact</a>
-        </nav>
+        <header>
+            <nav class="nav-top">
+                <a class="nav-logo" href="{{ url_for('home') }}">richz.li</a>
+                <a class="nav-item" href="{{ url_for('about') }}">about</a>
+                <a class="nav-item" href="{{ url_for('projects') }}">projects</a>
+                <a class="nav-item" href="{{ url_for('blog') }}">blog</a>
+                <a class="nav-item" href="{{ url_for('contact') }}">contact</a>
+            </nav>
+        </header>
     {% endif %}
-
-    {% block content %}{% endblock %}
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
 </body>
 
 </html>

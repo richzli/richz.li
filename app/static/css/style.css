@@ -1,5 +1,12 @@
+:root {
+    --bg-color: lightgray;
+
+    scrollbar-track-color: transparent;
+    scrollbar-width: none;
+}
+
 body {
-    background-color: lightgray;
+    background-color: var(--bg-color);
 }
 
 h1 {
@@ -18,15 +25,11 @@ h1.page-header {
 h2 {
     font-family: 'Lato', sans-serif;
     font-size: 30px;
-
-    margin: 0px;
-    padding: 0px;
 }
 
-a {
-    color: purple;
-    background-color: transparent;
-    text-decoration: none;
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 .ml {
@@ -39,4 +42,73 @@ a {
     top: 50%;
     
     transform: translate(0, -50%);
+}
+
+a.ml-away {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* main content */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    padding: 4rem;
+}
+
+/* navbar */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: var(--bg-color);
+}
+
+.nav-top {
+    width: 100%;
+
+    display: flex;
+    align-items: center; /* vertical */
+}
+
+.nav-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+}
+
+.nav-item {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+}
+
+.nav-top a:first-child {
+    padding-left: 2rem;
+}
+
+.nav-top a:nth-child(2) {
+    margin-left: auto;
+}
+
+.nav-top a:last-child {
+    padding-right: 2rem;
+}
+
+.nav-logo, .nav-item {
+    list-style-type: none;
+
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+nav a {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
 }
