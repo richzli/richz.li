@@ -21,11 +21,14 @@
     {% if nav %}
         <header>
             <nav class="nav-top">
-                <a class="nav-logo" href="{{ url_for('home') }}">richz.li</a>
-                <a class="nav-item" href="{{ url_for('about') }}">about</a>
-                <a class="nav-item" href="{{ url_for('projects') }}">projects</a>
-                <a class="nav-item" href="{{ url_for('blog') }}">blog</a>
-                <a class="nav-item" href="{{ url_for('contact') }}">contact</a>
+                <li class="nav-logo"><a href="{{ url_for('home') }}">richz.li</a></li>
+                {% for page in nav %}
+                    {% if page == title %}
+                        <li class="nav-item nav-curr">{{ page }}</li>
+                    {% else %}
+                        <li class="nav-item"><a href="{{ url_for(page) }}">{{ page }}</a></li>
+                    {% endif %}
+                {% endfor %}
             </nav>
         </header>
     {% endif %}

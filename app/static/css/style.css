@@ -81,22 +81,26 @@ header {
 .nav-logo {
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
+
+    color: black;
 }
 
 .nav-item {
     font-family: 'Lato', sans-serif;
     font-size: 30px;
+
+    color: black;
 }
 
-.nav-top a:first-child {
+.nav-top li:first-child {
     padding-left: 2rem;
 }
 
-.nav-top a:nth-child(2) {
+.nav-top li:nth-child(2) {
     margin-left: auto;
 }
 
-.nav-top a:last-child {
+.nav-top li:last-child {
     padding-right: 2rem;
 }
 
@@ -105,6 +109,18 @@ header {
 
     padding: 1rem;
     vertical-align: middle;
+}
+
+.nav-curr::after {
+    background-image: url("../resources/up-arrow.svg");
+    background-size: 10px 20px;
+    display: inline-block;
+    width: 10px; 
+    height: 20px;
+    content: "";
+
+    position: absolute;
+    z-index: -1;
 }
 
 nav a {
