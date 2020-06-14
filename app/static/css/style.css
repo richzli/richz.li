@@ -1,5 +1,6 @@
 :root {
     --bg-color: lightgray;
+    --dark-purple: #680068;
 
     scrollbar-track-color: transparent;
     scrollbar-width: none;
@@ -33,8 +34,6 @@ p {
 }
 
 .ml {
-    display: none;
-
     width: 100%;
     text-align: center;
 
@@ -57,6 +56,8 @@ a.ml-away {
 }
 
 main {
+    display: none;
+
     padding: 4rem;
 }
 
@@ -92,6 +93,25 @@ header {
     color: black;
 }
 
+nav .nav-item:not(.nav-curr), nav .nav-item:not(.nav-curr).not-hovered {
+    position: relative;
+    bottom: 0rem;
+
+    transition: all 0.2s;
+}
+
+nav .nav-item:not(.nav-curr):hover, nav .nav-item:not(.nav-curr).hovered {
+    position: relative;
+    bottom: 0.3rem;
+}
+
+.nav-curr {
+    /* color: var(--dark-purple); */ /* can't get color transitions working */
+
+    position: relative;
+    bottom: 0.3rem;
+}
+
 .nav-top li:first-child {
     padding-left: 2rem;
 }
@@ -109,18 +129,6 @@ header {
 
     padding: 1rem;
     vertical-align: middle;
-}
-
-.nav-curr::after {
-    background-image: url("../resources/up-arrow.svg");
-    background-size: 10px 20px;
-    display: inline-block;
-    width: 10px; 
-    height: 20px;
-    content: "";
-
-    position: absolute;
-    z-index: -1;
 }
 
 nav a {
