@@ -1,0 +1,92 @@
+:root {
+    --nav-color: var(--bg-color);
+    --nav-underline-color: #D0D0D0;
+    --nav-text-color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: var(--nav-color);
+}
+
+header::after {
+    color: var(--nav-underline-color);
+    height: 2px;
+}
+
+.padding-header {
+    padding: 0;
+    margin: -7;
+    border: 0;
+}
+
+/* text */
+
+nav a {
+    color: var(--nav-text-color);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav-top {
+    width: 100%;
+
+    display: flex;
+    align-items: center; /* vertical */
+}
+
+.nav-logo, .nav-item {
+    list-style-type: none;
+
+    padding: 0.5rem;
+    vertical-align: middle;
+}
+
+.nav-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+
+    color: var(--nav-text-color);
+}
+
+.nav-item {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+
+    color: var(--nav-text-color);
+}
+
+nav .nav-item:not(.nav-curr), nav .nav-item:not(.nav-curr).not-hovered {
+    position: relative;
+    bottom: 0rem;
+
+    transition: all 0.2s;
+}
+
+nav .nav-item:not(.nav-curr):hover, nav .nav-item:not(.nav-curr).hovered {
+    position: relative;
+    bottom: 0.2rem;
+}
+
+.nav-curr {
+    /* color: var(--dark-purple); */ /* can't get color transitions working */
+
+    position: relative;
+    bottom: 0.2rem;
+}
+
+.nav-top li:first-child {
+    padding-left: 1rem;
+}
+
+.nav-top li:nth-child(2) {
+    margin-left: auto;
+}
+
+.nav-top li:last-child {
+    padding-right: 1rem;
+}

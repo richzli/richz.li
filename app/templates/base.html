@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@800&family=Roboto:wght@300&display=swap"> 
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    {% if nav %}
+        <link rel="stylesheet" type="text/css" href="static/css/nav.css">
+    {% endif %}
     {% block styles %}{% endblock %}
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -34,6 +37,7 @@
                 {% endfor %}
             </nav>
         </header>
+        <div class="padding-header"></div>
     {% endif %}
     
     <main>
