@@ -1,4 +1,6 @@
 $(window).bind("pageshow", () => {
+    $("main").css("display", "none");
+    $("main").css("height", "100%");
     $("main").fadeIn(500);
     $("main").particleground({
         dotColor: "#D0D0D0",

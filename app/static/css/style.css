@@ -1,13 +1,20 @@
 :root {
     --bg-color: white;
-    --dark-purple: #680068;
+    --bg-color-dark: #D0D0D0;
+    --dark-purple: #800080;
 
     scrollbar-track-color: transparent;
     scrollbar-width: none;
+
+    font-size: 20px;
 }
 
 body {
     background-color: var(--bg-color);
+
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 h1 {
@@ -26,11 +33,23 @@ h1.page-header {
 h2 {
     font-family: 'Lato', sans-serif;
     font-size: 30px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 p {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+p strong {
+    font-weight: 700;
 }
 
 .ml {
@@ -44,20 +63,51 @@ p {
 }
 
 a.ml-away {
-    color: purple;
+    color: var(--dark-purple);
     background-color: transparent;
     text-decoration: none;
 }
 
 /* main content */
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 main {
-    display: none;
     width: 100%;
-    height: 100%;
 }
 
+.section {
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+.section:nth-child(odd) {
+    background-color: var(--bg-color-dark);
+}
+
+.container {
+    margin: 0 15%;
+    padding: auto auto;
+
+    align-items: center;
+}
+
+.container-double .column {
+    width: 40%;
+
+    text-align: center;
+}
+
+.container-double .column:first-child {
+    float: left;
+}
+
+.container-double .column:last-child {
+    float: right;
+}
+
+.container-double .column.info-left {
+    text-align: right;
+}
+
+.container-double .column.info-right {
+    text-align: left;
+}

@@ -1,5 +1,6 @@
 $(window).bind("pageshow", () => {
     $(".padding-header").css("height", $("header").height());
+    $("main").css("display", "none");
     $("main").fadeIn(500);
 });
 
