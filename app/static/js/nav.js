@@ -1,7 +1,6 @@
 $(window).bind("pageshow", () => {
     $(".padding-header").css("height", $("header").height());
-    $("main").css("display", "none");
-    $("main").fadeIn(500);
+    $("main.content").addClass("show");
 });
 
 $(function() {
@@ -10,7 +9,7 @@ $(function() {
         evt.preventDefault();
         $(".nav-curr").animate({bottom: "-=0.2rem"}, {duration: 200, queue: false});
         $(evt.target).parent().toggleClass("hovered");
-        $("main").fadeOut(200);
+        $("main.content").removeClass("show");
         setTimeout(function() {
             window.location.href = $(evt.target).attr("href");
         }, 200);

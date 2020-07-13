@@ -1,20 +1,20 @@
 $(window).bind("pageshow", () => {
-    $("main").css("display", "none");
-    $("main").css("height", "100%");
-    $("main").fadeIn(500);
-    $("main").particleground({
+    $("main.ml-content").css("height", "100%");
+    $("main.ml-content").addClass("show");
+    /* $("main.ml-content").particleground({
         dotColor: "#D0D0D0",
         lineColor: "#D0D0D0",
-        density: 14000,
+        density: 15000,
+        proximity: 100,
         parallax: false
-    });
+    }); */
 });
 
 $(function() {
     $(".ml-away").click(function(e) {
         var evt = window.event || e;
         evt.preventDefault();
-        $("main").fadeOut(500);
+        $("main.ml-content").removeClass("show");
         setTimeout(function() {
             window.location.href = $(evt.target).attr("href");
         }, 500);
