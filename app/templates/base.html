@@ -37,9 +37,41 @@
         <div class="padding-header"></div>
     {% endif %}
     
-    
     <main class="{{ 'content' if nav else 'ml-content' }}">
         {% block content %}{% endblock %}
+        {% if nav %}
+            <footer>
+                <div class="footer-container">
+                    <span class="footer-text">
+                        © richard li, 2020. all rights reserved.
+                    </span>
+
+                    <div class="footer-link">
+                        <a href="https://github.com/richzli" target="_blank">
+                            <img src="static/resources/github.svg" height="20" />
+                        </a>
+                    </div>
+
+                    <div class="footer-link">
+                        <a href="https://codeforces.com/profile/richzli" target="_blank">
+                            <img src="static/resources/codeforces.svg" height="20" />
+                        </a>
+                    </div>
+
+                    <div class="footer-link">
+                        <a href="https://www.youtube.com/channel/UChVIUpuMHoCJDz5eZEhgqJw" target="_blank">
+                            <img src="static/resources/youtube.svg" height="20" />
+                        </a>
+                    </div>
+
+                    <div class="footer-link">
+                        <a href="https://www.linkedin.com/in/richzli/" target="_blank">
+                            <img src="static/resources/linkedin.svg" height="20" />
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        {% endif %}
     </main>
 </body>
 

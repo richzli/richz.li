@@ -1,3 +1,7 @@
+/* #########
+    base stuff
+   ######### */
+
 :root {
     --bg-color: white;
     --bg-color-dark: #F0F0F0;
@@ -18,26 +22,13 @@ body {
 }
 
 h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 80px;
-
-    margin: 0px;
-    padding: 0px;
-}
-
-h1.page-header {
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 30px;
     font-weight: bold;
 }
 
-h3 {
-    font-family: 'Roboto Slab', sans-serif;
+h2 {
+    font-family: 'Lato', sans-serif;
     font-size: 30px;
     font-weight: bold;
 }
@@ -53,6 +44,15 @@ p strong {
     font-weight: 700;
 }
 
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* #########
+    middle-large things
+   ######### */
+
 .ml {
     width: 100%;
     text-align: center;
@@ -63,13 +63,33 @@ p strong {
     transform: translate(0, -50%);
 }
 
-a.ml-away {
-    color: var(--dark-purple);
-    background-color: transparent;
-    text-decoration: none;
+.ml-text-primary {
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+
+    margin: 0px;
+    padding: 0px;
 }
 
-/* main content */
+.ml-text-primary.page-header {
+    margin: 0;
+    padding: 0;
+}
+
+.ml-text-secondary {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a.ml-away {
+    color: var(--dark-purple);
+}
+
+/* ##########
+    main content 
+   ########## */
+
 
 main {
     width: 100%;
@@ -82,7 +102,7 @@ main.content {
 
 main.ml-content {
     opacity: 0;
-    transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s linear;
 }
 
 main.show {
@@ -126,4 +146,40 @@ main.show {
 
 .column .stuff {
     padding: auto auto;
+}
+
+/* #########
+    footer
+   ######### */
+
+footer {
+    width: 100%;
+    border-top: 2px solid var(--bg-color-dark);
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+
+    padding: 1rem 5rem;
+}
+
+.footer-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.footer-links-container {
+    display: flex;
+}
+
+.footer-link img {
+    margin: 0.5rem;
+    vertical-align: middle;
+}
+
+.footer-link:first-of-type {
+    margin-left: auto;
 }
