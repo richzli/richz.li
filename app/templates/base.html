@@ -43,8 +43,11 @@
             <footer>
                 <div class="footer-container">
                     <span class="footer-text">
-                        © richard li, 2020. all rights reserved.
+                        © richard li<span id="year"></span>. all rights reserved.
                     </span>
+                    <script type="text/javascript">
+                        $("#year").html(", " + new Date().getFullYear());
+                    </script>
 
                     <div class="footer-link">
                         <a href="https://github.com/richzli" target="_blank">
