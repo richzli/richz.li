@@ -212,11 +212,15 @@ main.show {
    ######### */
 
 .card-container {
-    padding: 0 15%;
+    padding: 1rem 15%;
     
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.card-holder {
+    padding: 20px;
 }
 
 .card {
@@ -233,6 +237,9 @@ main.show {
 .card:hover {
     width: 220px;
     height: 220px;
+
+    margin: -10px;
+
     background-size: 220px 220px;
 }
 

@@ -10,13 +10,13 @@
     {% endif %}
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@800&family=Roboto:wght@300;700&family=Roboto+Slab&family=Open+Sans:wght@300&display=swap"> 
-    <link rel="stylesheet" type="text/css" href="static/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
-    <link rel="stylesheet" type="text/css" href="static/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nav.css') }}">
     {% block styles %}{% endblock %}
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="static/js/nav.js"></script>
+    <script src="{{ url_for('static', filename='js/link-animate.js') }}"></script>
     {% block scripts %}{% endblock %}
 </head>
 
@@ -29,7 +29,7 @@
                     {% if page == title %}
                         <li class="nav-item nav-curr">{{ page }}</li>
                     {% else %}
-                        <li class="nav-item"><a href="{{ url_for(page) }}">{{ page }}</a></li>
+                        <li class="nav-item"><a class="internal-link" href="{{ url_for(page) }}">{{ page }}</a></li>
                     {% endif %}
                 {% endfor %}
             </nav>
@@ -51,25 +51,25 @@
 
                     <div class="footer-link">
                         <a href="https://github.com/richzli" target="_blank">
-                            <img src="static/resources/logos/github.svg" height="20" />
+                            <img src="{{ url_for('static', filename='resources/logos/github.svg') }}" height="20" />
                         </a>
                     </div>
 
                     <div class="footer-link">
                         <a href="https://codeforces.com/profile/richzli" target="_blank">
-                            <img src="static/resources/logos/codeforces.svg" height="20" />
+                            <img src="{{ url_for('static', filename='resources/logos/codeforces.svg') }}" height="20" />
                         </a>
                     </div>
 
                     <div class="footer-link">
                         <a href="https://www.youtube.com/channel/UChVIUpuMHoCJDz5eZEhgqJw" target="_blank">
-                            <img src="static/resources/logos/youtube.svg" height="20" />
+                            <img src="{{ url_for('static', filename='resources/logos/youtube.svg') }}" height="20" />
                         </a>
                     </div>
 
                     <div class="footer-link">
                         <a href="https://www.linkedin.com/in/richzli/" target="_blank">
-                            <img src="static/resources/logos/linkedin.svg" height="20" />
+                            <img src="{{ url_for('static', filename='resources/logos/linkedin.svg') }}" height="20" />
                         </a>
                     </div>
                 </div>

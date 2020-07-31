@@ -15,6 +15,10 @@ def about():
 def projects():
     return render_template("projects.html", title = "projects", nav = pages)
 
+@app.route("/projects/<name>")
+def project_view(name):
+    return render_template("projects.html", title = name, nav = pages)
+
 @app.route("/blog")
 def blog():
     return render_template("blog.html", title = "blog", nav = pages)
@@ -22,7 +26,6 @@ def blog():
 @app.route("/contact")
 def contact():
     return render_template("contact.html", title = "contact", nav = pages)
-
 
 @app.errorhandler(404)
 def page_not_found(e):
