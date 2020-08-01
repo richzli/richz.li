@@ -17,7 +17,7 @@ def projects():
 
 @app.route("/projects/<name>")
 def project_view(name):
-    return render_template("projects.html", title = name, nav = pages)
+    return render_template(f"projects/{name}.html", title = name, nav = pages)
 
 @app.route("/blog")
 def blog():
