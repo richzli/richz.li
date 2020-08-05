@@ -1,4 +1,4 @@
-$(window).bind("pageshow", () => {
+$(function() {
     $("main.ml-content").css("height", "100%");
     $("main.ml-content").addClass("show");
     /* $("main.ml-content").particleground({

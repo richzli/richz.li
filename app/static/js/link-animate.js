@@ -1,4 +1,4 @@
-$(window).bind("pageshow", () => {
+$(function() {
     $(".padding-header").css("height", $("header").height());
     $("main.content").addClass("show");
 });
@@ -9,7 +9,6 @@ $(function() {
         var target = $(this).attr("href");
         evt.preventDefault();
         $(".nav-curr").animate({bottom: "-=0.2rem"}, {duration: 200, queue: false})
-                      .animate({bottom: "+=0.2rem"}, {duration: 0, queue: false});
         if ($(evt.target).parent().is($(".nav-item"))) {
             $(evt.target).parent().toggleClass("hovered");
         }

@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, abort
 from app import app
 
 pages = ("about", "projects", "blog", "contact")
@@ -17,7 +17,10 @@ def projects():
 
 @app.route("/projects/<name>")
 def project_view(name):
-    return render_template(f"projects/{name}.html", title = name, nav = pages)
+    try:
+        return render_template(f"projects/{name}.html", title = name, nav = pages)
+    except:
+        abort(404)
 
 @app.route("/blog")
 def blog():
