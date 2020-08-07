@@ -2,12 +2,12 @@
 
 {% block content %}
 <div class="card-container">
-    {% for i in range(8) %}
+    {% for project in projects %}
         <div class="card-holder">
-            <a class="internal-link" href="{{ url_for('project_view', name='project' + i|string) }}">
-                <div class="card" style="background-image: url('./static/resources/projectimgs/{{ i }}.png')">
+            <a class="internal-link" href="{{ url_for('project_view', name=project['link']) }}">
+                <div class="card" style="background-image: url({{ url_for('static', filename='resources/projectimgs/' + project['img']) }})">
                     <div class="card-content">
-                        <span class="card-title">card {{ i }}</span>
+                        <div class="card-title">{{ project['title'] }}</div>
                     </div>
                 </div>
             </a>

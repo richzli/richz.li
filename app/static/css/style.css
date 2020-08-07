@@ -244,8 +244,20 @@ main.show {
 }
 
 .card-content {
-    padding: 10%;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card-title {
+    margin: 15%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
     color: white;
+    font-family: "Roboto Slab", sans-serif;
 }
 
 /* #########

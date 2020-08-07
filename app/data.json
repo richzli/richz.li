@@ -1,0 +1,22 @@
+{
+    "pages": [
+        "about",
+        "projects",
+        "blog",
+        "contact"
+    ],
+    "projects": [
+        {
+            "name": "project1",
+            "title": "project one",
+            "link": "project1",
+            "img": "1.png"
+        },
+        {
+            "name": "project2",
+            "title": "project TWO",
+            "link": "project2",
+            "img": "6.png"
+        }
+    ]
+}

@@ -20,3 +20,9 @@ $(function() {
         }, 500);
     });
 });
+
+$(window).bind("pageshow", function(event) {
+    if (event.originalEvent.persisted) { // if back button
+        $("main.ml-content").addClass("show");
+    }
+});

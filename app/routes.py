@@ -1,7 +1,11 @@
 from flask import render_template, abort
 from app import app
+import json
 
-pages = ("about", "projects", "blog", "contact")
+f = open("./app/data.json", "r")
+data = json.load(f)
+pages = data["pages"]
+f.close()
 
 @app.route("/")
 def home():
@@ -13,7 +17,7 @@ def about():
 
 @app.route("/projects")
 def projects():
-    return render_template("projects.html", title = "projects", nav = pages)
+    return render_template("projects.html", title = "projects", nav = pages, projects = data["projects"])
 
 @app.route("/projects/<name>")
 def project_view(name):
