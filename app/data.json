@@ -7,16 +7,16 @@
     ],
     "projects": [
         {
-            "name": "project1",
-            "title": "project one",
-            "link": "project1",
-            "img": "1.png"
-        },
-        {
-            "name": "project2",
-            "title": "project TWO",
+            "name": "website",
+            "title": "richz.li",
             "link": "project2",
             "img": "6.png"
+        },
+        {
+            "name": "frc-analytics",
+            "title": "FRC analytics",
+            "link": "project1",
+            "img": "1.png"
         }
     ]
 }

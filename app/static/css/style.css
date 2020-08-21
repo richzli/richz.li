@@ -33,6 +33,11 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -136,9 +141,12 @@ main.show {
 
 .container {
     margin: 0 15%;
-    padding: auto auto;
+}
 
-    align-items: center;
+.container-single {
+    padding: 1rem 0;
+
+    text-align: center;
 }
 
 .column {
@@ -258,6 +266,7 @@ main.show {
 
     color: white;
     font-family: "Roboto Slab", sans-serif;
+    text-align: right;
 }
 
 
@@ -275,7 +284,7 @@ main.show {
 .blog-content {
     flex: 4;
 
-    padding: 2rem 6rem;
+    padding: 2rem 5rem;
 }
 
 .blog-sidebar {

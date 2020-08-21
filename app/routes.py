@@ -1,11 +1,22 @@
 from flask import render_template, abort
 from app import app
-import json
+import json, time
 
-f = open("./app/data.json", "r")
-data = json.load(f)
-pages = data["pages"]
-f.close()
+DATA_FILENAME = "./app/data.json"
+data = {}
+last_updated = 0
+
+@app.before_request
+def update_data():
+    global data, last_updated
+    curr_time = int(time.time())
+    if curr_time - last_updated > 60:
+        f = open(DATA_FILENAME, "r")
+        data = json.load(f)
+        f.close()
+        last_updated = curr_time
+
+update_data()
 
 @app.route("/")
 def home():
@@ -13,26 +24,26 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template("about.html", title = "about", nav = pages)
+    return render_template("about.html", title = "about", nav = data["pages"])
 
 @app.route("/projects")
 def projects():
-    return render_template("projects.html", title = "projects", nav = pages, projects = data["projects"])
+    return render_template("projects.html", title = "projects", nav = data["pages"], projects = data["projects"])
 
 @app.route("/projects/<name>")
 def project_view(name):
     try:
-        return render_template(f"projects/{name}.html", title = name, nav = pages)
+        return render_template(f"projects/{name}.html", title = name, nav = data["pages"])
     except:
         abort(404)
 
 @app.route("/blog")
 def blog():
-    return render_template("blog.html", title = "blog", nav = pages)
+    return render_template("blog.html", title = "blog", nav = data["pages"])
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html", title = "contact", nav = pages)
+    return render_template("contact.html", title = "contact", nav = data["pages"])
 
 @app.errorhandler(404)
 def page_not_found(e):
