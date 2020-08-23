@@ -1,6 +1,6 @@
 from flask import render_template, abort
 from app import app
-import json, time
+import json, os, time
 
 DATA_FILENAME = "./app/data.json"
 data = {}
@@ -9,8 +9,8 @@ last_updated = 0
 @app.before_request
 def update_data():
     global data, last_updated
-    curr_time = int(time.time())
-    if curr_time - last_updated > 60:
+    curr_time = os.path.getmtime(DATA_FILENAME)
+    if curr_time > last_updated:
         f = open(DATA_FILENAME, "r")
         data = json.load(f)
         f.close()

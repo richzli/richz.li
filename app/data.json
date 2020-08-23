@@ -9,14 +9,14 @@
         {
             "name": "website",
             "title": "richz.li",
-            "link": "project2",
-            "img": "6.png"
+            "link": "this",
+            "img": "this.png"
         },
         {
             "name": "frc-analytics",
             "title": "FRC analytics",
-            "link": "project1",
-            "img": "1.png"
+            "link": "frc-analytics",
+            "img": "frc-analytics.png"
         }
     ]
 }

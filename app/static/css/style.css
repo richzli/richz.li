@@ -144,6 +144,7 @@ main.show {
 }
 
 .container-single {
+    margin: 0 25%;
     padding: 1rem 0;
 
     text-align: center;
@@ -269,6 +270,13 @@ main.show {
     text-align: right;
 }
 
+.project-img {
+    box-shadow: 0 0 5px #000;
+}
+
+.project-icon-link {
+    vertical-align: top;
+}
 
 /* ##########
    ##########
