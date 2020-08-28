@@ -13,6 +13,12 @@
             "img": "this.png"
         },
         {
+            "name": "cookee",
+            "title": "Cookee",
+            "link": "cookee",
+            "img": "cookee-logo.png"
+        },
+        {
             "name": "frc-analytics",
             "title": "FRC analytics",
             "link": "frc-analytics",
