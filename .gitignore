@@ -1,2 +1,5 @@
 venv/
 *.pyc
+
+data/db/*
+!data/db/database.md

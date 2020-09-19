@@ -1,0 +1,1 @@
+This is where the database is stored. I'm gitignoring all of the database files so stuff doesn't get clogged up. This file exists so that git will correctly create the `./data/db` folder.

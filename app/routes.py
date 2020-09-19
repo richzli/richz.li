@@ -1,8 +1,8 @@
 from flask import render_template, abort
-from app import app
+from app import app, mongo
 import json, os, time
 
-DATA_FILENAME = "./app/data.json"
+DATA_FILENAME = "./data/data.json"
 data = {}
 last_updated = 0
 
