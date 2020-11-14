@@ -7,6 +7,12 @@
     ],
     "projects": [
         {
+            "name": "b01lers bot",
+            "title": "b01lers bot",
+            "link": "b01lers-bot",
+            "img": "b01lers-logo.png"
+        },
+        {
             "name": "website",
             "title": "richz.li",
             "link": "this",
@@ -20,7 +26,7 @@
         },
         {
             "name": "frc-analytics",
-            "title": "FRC analytics",
+            "title": "frc analytics",
             "link": "frc-analytics",
             "img": "frc-analytics.png"
         }
