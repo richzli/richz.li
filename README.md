@@ -3,6 +3,7 @@
 - flask
 - python-dotenv
 - Flask-PyMongo
+- markdown2
 
 # run
 
