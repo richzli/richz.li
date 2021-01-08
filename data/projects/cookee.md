@@ -2,7 +2,7 @@ cookee
 
 +++
 
-https://github.com/richzli/cookee resources/logos/github.svg
+https://github.com/richzli/cookee resources/icons/github.svg
 
 ---
 

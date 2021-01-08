@@ -7,6 +7,18 @@
     ],
     "projects": [
         {
+            "name": "space filling image",
+            "title": "space filling image",
+            "link": "space-filling-image",
+            "img": "space-filling-image.png"
+        },
+        {
+            "name": "farm assist",
+            "title": "farm assist",
+            "link": "farmassist",
+            "img": "farmassist.png"
+        },
+        {
             "name": "b01lers bot",
             "title": "b01lers bot",
             "link": "b01lers-bot",

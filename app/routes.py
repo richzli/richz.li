@@ -34,9 +34,6 @@ def projects():
 def project_view(link):
     try:
         content = open(f"./data/projects/{link}.md", "r").read()
-        print("DONE!")
-        a = render.render_project_page(content)
-        print(a)
         return render_template_string(render.render_project_page(content), title = link, nav = data["pages"])
     except:
         abort(404)

@@ -2,7 +2,7 @@ FRC data analytics
 
 +++
 
-https://github.com/richzli/frc-analytics resources/logos/github.svg
+https://github.com/richzli/frc-analytics resources/icons/github.svg
 
 ---
 

@@ -8,7 +8,7 @@ A Discord bot made for the b01lers CTF club with various participation tracking,
 
 The bot is coded in **Python** using the **discord.py** module and **SQLite** for the backend.
 
-It started off as a simple task: just refactor some hastily-written code. I soon started adding many more features to the bot, which included an aesthetic overhaul, many moderation commands, as well as an activity tracker.
+It started off as a simple task: just refactor some hastily-written code. Eventually, I was tasked with adding more features to the bot, which included an aesthetic overhaul, many moderation commands, as well as an activity tracker.
 
 +++
 
