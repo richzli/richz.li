@@ -1,9 +1,9 @@
 {
     "pages": [
-        "about",
-        "projects",
-        "blog",
-        "contact"
+        ["about", "about"],
+        ["projects", "projects"],
+        ["blog", "blog.index"],
+        ["contact", "contact"]
     ],
     "projects": [
         {

@@ -1,5 +1,5 @@
 from flask import render_template, render_template_string, abort
-from app import app, mongo, render
+from app import app, render
 import json, os, time
 
 DATA_FILENAME = "./data/data.json"
@@ -35,12 +35,8 @@ def project_view(link):
     try:
         content = open(f"./data/projects/{link}.md", "r").read()
         return render_template_string(render.render_project_page(content), title = link, nav = data["pages"])
-    except:
+    except FileNotFoundError:
         abort(404)
-
-@app.route("/blog")
-def blog():
-    return render_template("blog.html", title = "blog", nav = data["pages"])
 
 @app.route("/contact")
 def contact():
