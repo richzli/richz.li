@@ -4,6 +4,8 @@ from app.routes import data
 
 blog = Blueprint("blog", __name__, template_folder="templates")
 
+# posts = mongo.db.posts
+
 @blog.route("")
 def index():
     return render_template("blog.html", title = "blog", nav = data["pages"])
