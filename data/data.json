@@ -7,6 +7,12 @@
     ],
     "projects": [
         {
+            "name": "sentivents",
+            "title": "sentivents",
+            "link": "sentivents",
+            "img": "sv6.png"
+        },
+        {
             "name": "space filling image",
             "title": "space filling image",
             "link": "space-filling-image",

@@ -11,7 +11,7 @@ Traces an image along various space-filling curves.
 
 ---
 
-This site runs on **Javascript** with no external libraries.
+This site uses native **Javascript**.
 
 This was my final project for MA 440, Honors Real Analysis. Inspired by discussions of cardinality, this program takes an image and traces it along three different space filling curves: the Hilbert curve, Z-order curve, and Peano curve.
 
