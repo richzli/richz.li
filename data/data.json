@@ -2,7 +2,6 @@
     "pages": [
         ["about", "about"],
         ["projects", "projects"],
-        ["blog", "blog.index"],
         ["contact", "contact"]
     ],
     "projects": [

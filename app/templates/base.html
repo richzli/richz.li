@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    {% if nav %}
+    {% if nav and title != "home" %}
         <header>
             <nav class="nav-top">
                 <li class="nav-logo"><a href="{{ url_for('home') }}">richz.li</a></li>
@@ -41,7 +41,7 @@
     
     <main class="{{ 'content' if nav else 'ml-content' }}">
         {% block content %}{% endblock %}
-        {% if nav %}
+        {% if nav and title != "home" %}
             <footer>
                 <div class="footer-container">
                     <span class="footer-text">
