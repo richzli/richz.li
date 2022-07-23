@@ -12,9 +12,11 @@
 {% block content %}
     <div class="ml home-main">
         <span class="ml-text-primary">richard li</span>
+        <!--
         {% for page in nav %}
             <div class="scroll-text"><a class="ml-away" href="{{ url_for(page[1]) }}">&gt; {{ page[0] }} &lt;</a></div>
         {% endfor %}
+        -->
     </div>
     <script src="{{ url_for('static', filename='js/home.js') }}"></script>
 {% endblock %}

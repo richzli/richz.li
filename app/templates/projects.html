@@ -1,17 +1,37 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="card-container">
-    {% for project in projects %}
-        <div class="card-holder">
-            <a class="internal-link" href="{{ url_for('project_view', link=project['link']) }}">
-                <div class="card" style="background-image: url({{ url_for('static', filename='resources/project/' + project['img']) }})">
-                    <div class="card-content">
-                        <div class="card-title">{{ project['title'] }}</div>
+<div class="section">
+    <div class="container-single">
+        <h1>projects</h1>
+    </div>
+    <div class="card-container">
+        {% for project in projects %}
+            <div class="card-holder">
+                <a class="internal-link" href="{{ url_for('project_view', link=project['link']) }}">
+                    <div class="card" style="background-image: url({{ url_for('static', filename='resources/project/' + project['img']) }})">
+                        <div class="card-content">
+                            <div class="card-title">{{ project['title'] }}</div>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-    {% endfor %}
+                </a>
+            </div>
+        {% endfor %}
+    </div>
 </div>
-{% endblock %}
+<div class="section">
+    <div class="container container-single">
+        <h1>undergrad theses</h1>
+    </div>
+    <div class="container container-single">
+        <div class="group">
+            <h2><a href="https://drive.google.com/file/d/1q6NlHMhQ7Ql7xCj7DUe2OiLXYPtnksEo/view?usp=sharing" target="_blank">computing the copula function under differential privacy</a><h2>
+            <p>differential privacy, statistics</p>
+        </div>
+        <div class="group">
+            <h2><a href="https://drive.google.com/file/d/197zMqJH0zr2Z27iYW8sNM5cyYjXFLRXA/view?usp=sharing" target="_blank">using hand trackers to predict arm orientation</a><h2>
+            <p>vr, embodiment</p>
+        </div>
+    </div>
+</div>
+{% endblock %}  
