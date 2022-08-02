@@ -6,6 +6,18 @@
     ],
     "projects": [
         {
+            "name": "fake word cloud",
+            "title": "fake word cloud",
+            "link": "fake-word-cloud",
+            "img": "fwc.png"
+        },
+        {
+            "name": "snap",
+            "title": "snap",
+            "link": "snap",
+            "img": "snap.png"
+        },
+        {
             "name": "sentivents",
             "title": "sentivents",
             "link": "sentivents",
