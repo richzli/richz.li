@@ -21,7 +21,7 @@ resources/project/boohooa.gif fit-half-width
 
 ---
 
-It's coded in **Javascript** with a little help from **gif.js**, a GIF encoder.
+It's completely client-side **Javascript** with a little help from **gif.js**, a GIF encoder.
 
 My original implementation was incredibly slow, and it turned out that I was re-loading the image data every frame, which completely destroyed performance. But after a few quick tweaks and parameter tunings, it was good to go.
 
