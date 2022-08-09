@@ -11,7 +11,7 @@
 
 {% block content %}
     <div class="ml home-main">
-        <span class="ml-text-primary">richard li</span>
+        <a class="internal-link" href="{{ url_for('about') }}"><span class="ml-text-primary">richard li</span></a>
         <!--
         {% for page in nav %}
             <div class="scroll-text"><a class="ml-away" href="{{ url_for(page[1]) }}">&gt; {{ page[0] }} &lt;</a></div>
