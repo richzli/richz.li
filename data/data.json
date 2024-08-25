@@ -9,49 +9,59 @@
             "name": "fake word cloud",
             "title": "fake word cloud",
             "link": "fake-word-cloud",
-            "img": "fwc.png"
+            "img": "fwc.png",
+            "tags": ["python", "opengl"]
         },
         {
             "name": "snap",
             "title": "snap",
             "link": "snap",
-            "img": "snap.png"
+            "img": "snap.png",
+            "tags": ["javascript"]
         },
         {
             "name": "sentivents",
             "title": "sentivents",
             "link": "sentivents",
-            "img": "sv6.png"
+            "img": "sv6.png",
+            "tags": ["python", "react"]
         },
         {
             "name": "space filling image",
             "title": "space filling image",
             "link": "space-filling-image",
-            "img": "space-filling-image.png"
-        },
-        {
-            "name": "farm assist",
-            "title": "farm assist",
-            "link": "farmassist",
-            "img": "farmassist.png"
+            "img": "space-filling-image.png",
+            "tags": ["javascript"]
         },
         {
             "name": "b01lers bot",
             "title": "b01lers bot",
             "link": "b01lers-bot",
-            "img": "b01lers-logo.png"
+            "img": "b01lers-logo.png",
+            "tags": ["python"]
+        }
+    ],
+    "unused_projects": [
+        {
+            "name": "farm assist",
+            "title": "farm assist",
+            "link": "farmassist",
+            "img": "farmassist.png",
+            "tags": ["javascript"]
         },
         {
             "name": "cookee",
             "title": "cookee",
             "link": "cookee",
-            "img": "cookee-logo.png"
+            "img": "cookee-logo.png",
+            "tags": ["react", "firebase"]
         },
         {
             "name": "frc-analytics",
             "title": "frc analytics",
             "link": "frc-analytics",
-            "img": "huskie-robotics.png"
+            "img": "huskie-robotics.png",
+            "tags": ["python"]
         }
     ]
 }

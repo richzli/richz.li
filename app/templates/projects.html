@@ -12,6 +12,7 @@
                     <div class="card" style="background-image: url({{ url_for('static', filename='resources/project/' + project['img']) }})">
                         <div class="card-content">
                             <div class="card-title">{{ project['title'] }}</div>
+                            <div class="card-tags">{{ project['tags'] | join(", ") }}</div>
                         </div>
                     </div>
                 </a>
