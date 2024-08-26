@@ -38,7 +38,7 @@
             "title": "b01lers bot",
             "link": "b01lers-bot",
             "img": "b01lers-logo.png",
-            "tags": ["python"]
+            "tags": ["python", "sqlite"]
         }
     ],
     "unused_projects": [
